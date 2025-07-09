@@ -122,7 +122,7 @@ export function FiltersSidebar({ filters, onFiltersChange }: FiltersSidebarProps
               <SelectValue placeholder="Select locations" />
             </SelectTrigger>
             <SelectContent>
-              <SelectItem value="all">All locations</SelectItem>
+              <SelectItem value="">All locations</SelectItem>
               {locations.map((location) => (
                 <SelectItem key={location} value={location}>
                   {location}
@@ -143,7 +143,7 @@ export function FiltersSidebar({ filters, onFiltersChange }: FiltersSidebarProps
               <SelectValue placeholder="Select providers" />
             </SelectTrigger>
             <SelectContent>
-              <SelectItem value="all">All providers</SelectItem>
+              <SelectItem value="">All providers</SelectItem>
               {providers.map((provider) => (
                 <SelectItem key={provider} value={provider}>
                   {provider}
